@@ -1,0 +1,314 @@
+@use 'fonts';
+@use 'reset';
+
+
+$primary-blue:#5474FD;
+$secondary-blue:#496BFE;
+$white:#fff;
+$grey:#999999;
+$gray: #333333;
+
+
+
+.header-section{
+    background-image: url(../images/header-bck.svg);
+    padding: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: fonts.$font-primary;
+        
+    }
+    h1{
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 2.6rem;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+        padding-bottom: 1.1rem;
+        
+    }
+    h3{
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        letter-spacing: 6.8px;
+        color: $white;
+        padding-bottom: 4.8rem;
+    }	
+    &__form {
+        margin: 0 auto;
+        &--row {
+            display: flex;  
+            input {
+                font-family: fonts.$font-primary;   
+                width:50rem ;
+                height: 5.3rem;
+                background:$white;
+                border: 3px solid $white;
+                font-size: 1.4rem;
+                line-height: 2.6rem;
+                color: $grey;
+                padding-bottom: 0.5rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 2.8px;
+                opacity: 0.9;
+                
+            }
+        button {
+            background-image: url(../images/search.svg);
+            background-repeat: no-repeat;
+            background-position-x: 125px;
+            background-position-y: 17px;
+            font-family: fonts.$font-primary;   
+            border: 3px solid $white;
+            font-size: 1.4rem;
+            line-height: 2.6rem;
+            color: $white;
+            padding: 1rem 5rem;
+            background-color: $primary-blue;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+    }
+}
+}
+.nav-section {
+    background-color: $primary-blue;
+    padding: 2.5rem 0;
+    &__main-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      h3{
+          font-family: fonts.$font-primary;
+          font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        color: #fff;
+  }
+    }
+    &__list {
+      display: flex;
+      li {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+      a {
+        font-family: fonts.$font-secondary;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        color: $white;
+        text-decoration:none;
+        text-transform: uppercase;
+
+    }
+  }
+}
+.banner-section {
+    background-image: url(../images/banner.svg);
+    padding: 9rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner {
+      padding: 10rem 0;
+      font-family: fonts.$font-secondary;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__text {
+      width: 40%;
+      h2 {
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        color: $white;
+        margin-bottom: 5rem;
+        width: 55%; 
+      }
+      p {
+        font-size: 1.6rem;
+        line-height: 3.6rem;
+        color: $white;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.2px;  
+      }
+    }
+    button {
+      font-family: fonts.$font-primary;   
+      width: 22.8rem;
+      height: 6.3rem;
+      font-size: 1.6rem;
+      color: $white;
+      background-color: $primary-blue;
+      text-align: center;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+   &__image{
+     display: flex;
+     flex-direction: column;
+   }
+  }
+  .stats-section {
+    background-color: #333333;
+    
+    padding: 4rem 0;
+    font-family: fonts.$font-secondary;
+    line-height: 15rem;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      a {
+        font-size: 4.6rem;
+        line-height: 6.2rem;
+        margin-left: 6.5rem;
+      }
+      h6 {
+        font-size: 3.6rem;
+        line-height: 2.6rem;
+        color: $white;
+        font-weight: 400  ;
+        
+      }
+    }
+    .spain-section__wrapper-up{
+      background-image: url(../images/places-wrapper1.svg);
+    }
+    .spain-section__wrapper-bottom{
+      background-image: url(../images/places-wrapper2.svg);
+    }
+    .spain-section__wrapper-up, .spain-section__wrapper-bottom{
+      padding: 227px 0 99px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .spain-section__wrapper{
+      &-right{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 200px;
+      }
+      &-left{
+        margin-left: 100px;
+      }
+      &-box{
+        display: flex;
+        flex-direction: column;
+        background: rgba(35,35,35, 0.9);
+        color: white;
+        padding: 6rem 6rem;
+        max-width: 36rem;
+        span{
+          font-size: 20px;
+          margin-bottom: 23px;
+        }
+        h3{
+          font-size: 20px;
+          margin-bottom: 13px;
+          text-transform: uppercase;
+        }
+        p{
+          margin-bottom: 46px;
+          font-size: 16px;
+        }
+        button {
+          font-family: fonts.$font-primary;   
+          width: 22.8rem;
+          height: 6.3rem;
+          font-size: 1.6rem;
+          color: $white;
+          background-color: $primary-blue;
+          text-align: center;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          opacity: 0.9;
+        }
+      }
+    }
+    .testimonials {
+      background-image: url(../images/bck4.svg);
+      background-size: cover;
+      padding: 10rem 0;
+      &__title {
+        font-family: fonts.$font-secondary;
+        font-size: 3.6rem;
+        line-height: 2.6rem;
+        text-align: center;
+        color: $white;
+        margin-bottom: 9.1rem;
+      }
+      &__card {
+        display: flex;
+        justify-content: center;
+        &__img {
+          max-width: 40%;
+        }
+        &__txt {
+          max-width: 60%;
+          background-color: $gray;
+          padding: 4.9rem 2.5rem 3.9rem 5.9rem;
+          h3 {
+            font-family: fonts.$font-primary;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            margin-bottom: 0.8rem;
+            color: $white;
+          }
+          p {
+            font-family: fonts.$font-primary;
+            color: $white;
+            font-size: 1.2rem;
+            line-height: 2.6rem;
+            i {
+              color: $primary-blue;
+              font-size: 3.6rem;
+            }
+          }
+        }
+      }
+    }
+    .footer-section{
+      background-color: #000000;
+      padding: 5rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &__main-footer{
+          font-family: fonts.$font-primary;
+          
+      }
+      h1{
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 2.6rem;
+          color: $white;
+          text-transform: uppercase;
+          letter-spacing: 4.8px;
+          padding-bottom: 1.1rem;
+          
+      }
+      h3{
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 0.6rem;
+          letter-spacing: 6.8px;
+          color: #fff;
+          padding-bottom: 2.8rem;
+      }	
+    }
+   
